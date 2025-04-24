@@ -19,10 +19,18 @@
 .header-hero h1 {
   font-size: 100px;
   color: black;
+  font-weight: bold;
 }
 
 .main-hero {
   background-image: url("../img/cork.png");
   background-position: center;
   height: calc(100vh - var(--header-hero-height));
+}
+
+.card {
+  margin-top: 80px;
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
