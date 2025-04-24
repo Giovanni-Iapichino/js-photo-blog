@@ -1,0 +1,21 @@
+:root {
+  --header-hero-height: 200px;
+}
+
+.header-hero {
+  background-image: url("../img/wall.png");
+  background-size: cover;
+  background-position: center;
+  height: var(--header-hero-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-hero {
+  background-image: url("../img/cork.png");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - var(--header-hero-height));
+}
