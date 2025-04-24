@@ -1,5 +1,5 @@
 :root {
-  --header-hero-height: 200px;
+  --header-hero-height: 170px;
 }
 
 .header-hero {
@@ -26,15 +26,23 @@
   background-image: url("../img/cork.png");
   background-position: center;
   height: calc(100vh - var(--header-hero-height));
+  overflow: auto;
 }
 
 .card {
   position: relative;
-  margin-top: 80px;
+  margin-top: 60px;
+  margin-bottom: 40px;
   font-family: "Edu TAS Beginner", cursive;
   font-optical-sizing: auto;
   font-style: normal;
   border-radius: 0%;
+}
+
+.card .card-text {
+  font-family: "Sometype Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .card .pin {
@@ -44,4 +52,16 @@
   transform: translateX(-50%);
   width: 40px;
   height: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .header-hero h1 {
+    font-size: 67px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-hero h1 {
+    font-size: 50px;
+  }
 }

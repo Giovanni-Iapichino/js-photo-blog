@@ -10,7 +10,7 @@ axios.get(api_url).then((response) => {
   images.forEach((image) => {
     if (image.url) {
       cardHTML += `
-        <div class="col-4">
+        <div class="col-s-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
           <div class="card p-3" style="width: 18rem">
             <img class="pin" src="./img/pin.svg" alt="Pin" />
             <img src="${image.url}" class="card-img-top" alt="${image.title}" />
