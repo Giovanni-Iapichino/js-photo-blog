@@ -29,8 +29,19 @@
 }
 
 .card {
+  position: relative;
   margin-top: 80px;
   font-family: "Edu TAS Beginner", cursive;
   font-optical-sizing: auto;
   font-style: normal;
+  border-radius: 0%;
+}
+
+.card .pin {
+  position: absolute;
+  position: absolute;
+  top: -12px;
+  right: 127px;
+  width: 40px;
+  height: 40px;
 }
