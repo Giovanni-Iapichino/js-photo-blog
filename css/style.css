@@ -4,18 +4,25 @@
 
 .header-hero {
   background-image: url("../img/wall.png");
-  background-size: cover;
   background-position: center;
   height: var(--header-hero-height);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header-hero h1 {
+  font-size: 100px;
+  color: black;
 }
 
 .main-hero {
   background-image: url("../img/cork.png");
-  background-size: cover;
   background-position: center;
   height: calc(100vh - var(--header-hero-height));
 }
