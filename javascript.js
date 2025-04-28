@@ -38,10 +38,15 @@ axios.get(api_url).then((response) => {
       overlayImageEl.alt = img.alt;
       overlayEL.classList.remove("d-none");
       overlayEL.classList.add("d-flex");
+      postNode.classList.add("d-none");
     });
   });
 
   closeButtonEl.addEventListener("click", () => {
     overlayEL.classList.replace("d-flex", "d-none");
+
+    postNodes.forEach((postNode) => {
+      postNode.classList.remove("d-none");
+    });
   });
 });
