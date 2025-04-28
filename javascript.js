@@ -2,12 +2,12 @@ rowEl = document.querySelector(".row");
 const api_url = "https://lanciweb.github.io/demo/api/pictures/";
 
 axios.get(api_url).then((response) => {
-  const images = response.data;
-  console.log(images);
+  const posts = response.data;
+  console.log(posts);
 
   let cardHTML = "";
 
-  images.forEach((image) => {
+  posts.forEach((image) => {
     if (image.url) {
       cardHTML += `
         <div class="col-s-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
