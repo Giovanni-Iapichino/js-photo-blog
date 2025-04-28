@@ -37,11 +37,11 @@ axios.get(api_url).then((response) => {
       overlayImageEl.src = img.src;
       overlayImageEl.alt = img.alt;
       overlayEL.classList.remove("d-none");
-      overlayEL.classList.add("d-block");
+      overlayEL.classList.add("d-flex");
     });
   });
 
   closeButtonEl.addEventListener("click", () => {
-    overlayEL.classList.replace("d-block", "d-none");
+    overlayEL.classList.replace("d-flex", "d-none");
   });
 });
