@@ -60,10 +60,10 @@
   backdrop-filter: blur(3px);
   z-index: 10;
   inset: 0;
-  display: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .open-post {
