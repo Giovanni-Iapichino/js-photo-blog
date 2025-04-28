@@ -60,14 +60,15 @@
   backdrop-filter: blur(3px);
   z-index: 10;
   inset: 0;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 
-.open-post {
+#open-post-image {
   position: relative;
+  max-width: 50%;
+  max-height: 50%;
 }
 
 #close-button {
