@@ -37,6 +37,13 @@
   font-optical-sizing: auto;
   font-style: normal;
   border-radius: 0%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card .card-text {
@@ -52,6 +59,10 @@
   transform: translateX(-50%);
   width: 40px;
   height: 40px;
+}
+
+.card:hover .pin {
+  display: none;
 }
 
 #overlay {
